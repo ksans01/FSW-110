@@ -11,18 +11,6 @@ var itemList = document.createElement('ol');
 itemList.textContent = 'Things we offer:'
 document.body.appendChild(itemList); 
 
-var item1 = document.createElement('li');
-var item2 = document.createElement('li');
-var item3 = document.createElement('li');
-var item4 = document.createElement('li');
-item1.textContent = 'Fresh Eggs';
-item2.textContent = 'Hatching Eggs';
-item3.textContent = 'Roosters';
-item4.textContent = 'Laying Hens';
-itemList.appendChild(item1);
-itemList.appendChild(item2);
-itemList.appendChild(item3);
-itemList.appendChild(item4);
 
 var footer = document.createElement('footer');
 footer.textContent = 'Author: Kurt Sanson';
@@ -31,3 +19,12 @@ var email = document.createElement('p');
 email.innerHTML = 'kurt.sanson@bryanuniversity.edu';
 footer.appendChild(email);
 
+var farmItems = ["Fresh Eggs", "Hatching Eggs", "Roosters", "Laying Hens"];
+var farmList = document.getElementById("farm");
+
+for (var i = 0; i < farmItems.length; i++){
+    
+    var newName = document.createElement("li");
+    newName.textContent = farmItems[i];
+    itemList.append(newName);
+}
