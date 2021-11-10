@@ -19,12 +19,16 @@ var email = document.createElement('p');
 email.innerHTML = 'kurt.sanson@bryanuniversity.edu';
 footer.appendChild(email);
 
-var farmItems = ["Fresh Eggs", "Hatching Eggs", "Roosters", "Laying Hens"];
-var farmList = document.getElementById("farm");
+var farmItems = ["Fresh Eggs", 
+                 "Hatching Eggs", 
+                 "Roosters", 
+                 "Laying Hens",            
+                ];
 
 for (var i = 0; i < farmItems.length; i++){
     
-    var newName = document.createElement("li");
-    newName.textContent = farmItems[i];
-    itemList.append(newName);
+    var farmList = document.createElement("li");
+    farmList.textContent = farmItems[i];
+    itemList.appendChild(farmList);
 }
+
