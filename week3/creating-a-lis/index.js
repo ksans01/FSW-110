@@ -15,7 +15,7 @@ for (let i = 0; i < 10; i++){
 
     if (i == 0){
         repeat.style.color = 'red';
-        repeat.style.textAlign = 'center'
+        repeat.style.textAlign = 'center'        
     } else if (i >= 7){
         repeat.style.color = 'green';
     } else if (i <= 5){

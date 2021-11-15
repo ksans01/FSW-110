@@ -1,0 +1,9 @@
+.border {
+
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    margin: 5px;
+    
+}
