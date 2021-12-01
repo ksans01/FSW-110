@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form name='myForm'>
+        <ol>
+            <li>
+                <label for="name">First Name:</label>
+                <input type="text" id="firstName" name="user-name">
+            </li>
+            <li>
+                <label for="name">Last Name:</label>
+                <input type="text" id="lastName" name="user-name">
+            </li>
+            <li>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="user-age">
+            </li><br>
+            <li>
+                <label for="shopping">Have you ever shopped with us before?</label><br>
+                Yes:<input type="radio" name="decision" value="Yes"/>
+                No:<input type="radio" name="decision" value="No"/>
+            </li><br>
+            <li>
+                <label for="shopAgain">Would you shop with us again?</label><br>
+                Definitely:<input type="radio" name="shopAgain" value="Yes"/>
+                Probably:<input type="radio" name="shopAgain" value="Probably"/>
+                Not Likely:<input type="radio" name="shopAgain" value="Not Likely"/>
+            </li><br>
+            <li>
+                <label for="order">What would you like to order?</label><br>
+                Fresh Eggs:<input type="checkbox" name="order" value="Fresh Eggs">
+                Meat Bird:<input type="checkbox" name="order" value="Meat Bird">
+                Hatching Eggs:<input type="checkbox" name="order" value="Hatching Eggs">
+                Layer Hen:<input type="checkbox" name="order" value="Layer Hen">
+            </li><br>
+        </ol>
+        
+    
+
+        <button input='submit'>Submit</button>
+    </form>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
