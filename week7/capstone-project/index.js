@@ -7,7 +7,8 @@ const age = document.getElementById('age');
 const form = document.myForm;
 const shopping = document.getElementsByClassName('shopping');
 const shopAgain = document.getElementsByClassName('shopAgain');
-
+const info = document.querySelector(".info");
+var clear = document.getElementById("my-form");
 
 
 form.addEventListener("submit", (event) => {
@@ -17,11 +18,16 @@ form.addEventListener("submit", (event) => {
     var ageInput = age.value;  
     
     console.log("Name: "+fullName+"\n"+
-           "Age: "+ageInput+"\n"+
-           "Have you ever shopped with us before? "+form.decision.value+"\n"+
-           "Would you shop with us again? "+form.shopAgain.value+"\n"+
-           "What would you like to order? ");   
-   
+    "Age: "+ageInput+"\n"+
+    "Have you ever shopped with us before? "+form.decision.value+"\n"+
+    "Would you shop with us again? "+form.shopAgain.value)
+
+    info.innerHTML= "Name: "+fullName+"<p>"+
+                    "Age: "+ageInput+"<p>"+
+                    "Have you ever shopped with us before? "+form.decision.value+"<p>"+
+                    "Would you shop with us again? "+form.shopAgain.value;   
+    
+   clear.reset();
 })
 
 function getEggs(e) {

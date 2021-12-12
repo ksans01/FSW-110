@@ -19,7 +19,7 @@
         </div>
         <h2>Please enter your information so we can remember you when you return!</h2>
 
-        <form name='myForm'>
+        <form name='myForm' id="my-form" autocomplete="off">
             <ol>
                 <li>
                     <label for="name">First Name:</label>
@@ -31,7 +31,7 @@
                 </li>
                 <li>
                     <label for="age">Age:</label>
-                    <input type="number" id="age" name="user-age">
+                    <input type="number" id="age" min="0" name="user-age">
                 </li><br>
                 <li>
                     <label for="shopping">Have you ever shopped with us before?</label><br>
@@ -43,18 +43,11 @@
                     Definitely:<input type="radio" name="shopAgain" value="Yes"/>
                     Probably:<input type="radio" name="shopAgain" value="Probably"/>
                     Not Likely:<input type="radio" name="shopAgain" value="Not Likely"/>
-                </li><br>
-                <li>
-                    <label for="order">What would you like to order?</label><br>
-                    Fresh Eggs:<input type="checkbox" name="order" value="Fresh Eggs">
-                    Meat Bird:<input type="checkbox" name="order" value="Meat Bird">
-                    Hatching Eggs:<input type="checkbox" name="order" value="Hatching Eggs">
-                    Layer Hen:<input type="checkbox" name="order" value="Layer Hen">
+                    <h3 class="info"></h3>
                 </li><br>
             </ol>   
     
             <button input='submit'>Submit</button>
-        
            
                     
                 <h1>What would you like to order?</h1>        
