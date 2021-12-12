@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link href="styles.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="header">
+            <h1 style="font-size: 60px;">Little Dinosaur Farm</h1>
+        </div>
+        
+        <div class="nav">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <h2>Please enter your information so we can remember you when you return!</h2>
+
+        <form name='myForm'>
+            <ol>
+                <li>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="firstName" name="user-name">
+                </li>
+                <li>
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="lastName" name="user-name">
+                </li>
+                <li>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="user-age">
+                </li><br>
+                <li>
+                    <label for="shopping">Have you ever shopped with us before?</label><br>
+                    Yes:<input type="radio" name="decision" value="Yes"/>
+                    No:<input type="radio" name="decision" value="No"/>
+                </li><br>
+                <li>
+                    <label for="shopAgain">Would you shop with us again?</label><br>
+                    Definitely:<input type="radio" name="shopAgain" value="Yes"/>
+                    Probably:<input type="radio" name="shopAgain" value="Probably"/>
+                    Not Likely:<input type="radio" name="shopAgain" value="Not Likely"/>
+                </li><br>
+                <li>
+                    <label for="order">What would you like to order?</label><br>
+                    Fresh Eggs:<input type="checkbox" name="order" value="Fresh Eggs">
+                    Meat Bird:<input type="checkbox" name="order" value="Meat Bird">
+                    Hatching Eggs:<input type="checkbox" name="order" value="Hatching Eggs">
+                    Layer Hen:<input type="checkbox" name="order" value="Layer Hen">
+                </li><br>
+            </ol>   
+    
+            <button input='submit'>Submit</button>
+        
+           
+                    
+                <h1>What would you like to order?</h1>        
+                <br>        
+                
+                
+                    <div id = "eggs">
+                        
+                        <h2>Eggs</h2> 
+                        <h4>(By the dozen)</h4>           
+                        <h4>Price: $3.00</h4>
+                        <input class="priceBox" id="eggPrice" type="number" min="0" placeholder="How many eggs?">
+                        <input type="reset">
+                        <br>
+                        <br>
+                        
+                    </div>
+                
+                
+               
+                    <div id="hens">
+                        
+                        <h2>Layer Hens</h2>
+                        <h4>Price: $20.00</h4>
+                        <input class="priceBox" id="henPrice" type="number" min="0" placeholder="How many hens?">
+                        <input type="reset">
+                        <br>
+                        <br>
+                        
+                    </div>
+
+                    <div id="roosters">
+                        
+                        <h2>Roosters</h2>
+                        <h4>Price: $25.00</h4>
+                        <input class="priceBox" id="roosterPrice" type="number" min="0" placeholder="How many roosters?">
+                        <input type="reset">
+                        <br>
+                        <br>
+                        
+
+                    </div>
+                
+                
+                    <div>
+                        <h2 id="total">Total price is: </h2>
+                        <h3 class="amount"></h3>
+                        <button class="btn" id="submit">Get Total</button>
+                        
+                    </div>
+                
+
+                </form>
+
+           
+        
+
+                    <script src="index.js"></script>
+
+    </body>
+</html>

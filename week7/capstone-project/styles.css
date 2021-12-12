@@ -1,0 +1,240 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'fuzzy bubbles';
+    background-color: rgb(248, 179, 179)
+  
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr .5fr 1fr 2fr .5fr;
+    grid-gap: 1em;
+    grid-template-areas: 
+                "header header header header"
+                "nav nav nav nav"
+                "main main main main"
+                "farmItems about about about"
+                "footer footer footer footer";
+}
+
+
+.header {
+    grid-area: header;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.nav {
+    grid-area: nav;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+
+.nav li {
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+.nav a {    
+    padding: 25px;
+    color: white;
+    font-size: x-large;
+}
+
+.nav a:hover {
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    grid-area: about;
+    background-color: lightsteelblue;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px
+
+}
+
+#aboutTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightyellow;
+}
+
+.footer a:hover {
+    transition: 0.5s;
+    font-size: large;
+}
+
+.farmItems{
+    grid-area: farmItems;
+    width: 200px;
+    border: 5px solid black;
+    padding: 5px;
+    margin: 10px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+}
+
+#itemList {
+    line-height: 2;
+    color: rgb(243, 217, 217)
+}
+
+#itemList p {
+    font-size: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: brown;
+    color: white;
+    padding: 10;
+}
+
+td {
+    padding: 25;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 720px){
+
+.grid-container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto-fit(50px, 1fr)); 
+    grid-template-areas: 
+                "header"
+                "nav"
+                "main"
+                "farmItems"
+                "about"
+                "footer";       
+}
+
+div {
+    border-radius: 10px;
+    align-items: center;
+    font-size: 25px;
+    
+}
+
+.header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+
+.nav li {
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+.nav a {    
+    padding: 25px;
+    color: white;
+    font-size: x-large;
+}
+
+a:hover {
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    grid-area: about;
+    background-color: lightsteelblue;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px
+
+}
+
+#aboutTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightyellow;
+}
+
+.farmItems{
+    grid-area: farmItems;
+    width: auto;
+    border: 5px solid black;
+    padding: 5px;
+    margin: 10px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+}
+
+#itemList {
+    line-height: 2;
+    color: rgb(243, 217, 217)
+}
+
+#itemList p {
+    font-size: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: brown;
+    color: white;
+    padding: 10;
+}
+
+td {
+    padding: 25;
+    background-color: white;
+}
+}

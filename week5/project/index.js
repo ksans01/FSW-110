@@ -3,7 +3,7 @@ const lastName = document.getElementById('lastName');
 const age = document.getElementById('age');
 const form = document.myForm;
 const shopping = document.getElementsByClassName('shopping');
-const shopAgain = document.getElementsByClassName('shopAgain')
+const shopAgain = document.getElementsByClassName('shopAgain');
 
 
 form.addEventListener("submit", (event) => {
