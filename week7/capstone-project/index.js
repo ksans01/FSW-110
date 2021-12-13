@@ -63,7 +63,8 @@ function getTotal(e) {
     
     console.log("Your total is " + sum);
     amount.innerHTML = "Your total is: $" + sum;
-    
+    clear.reset();
+
 }
 
 
